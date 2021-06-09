@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background: linear-gradient(0deg, rgb(253, 143, 103), rgb(212,99,163));
+    min-height: 110vh; */
+    background-image: url(./cool-background.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    min-height: max-content;
+}
+
+
+
+a {
+    color: rgb(45, 45, 46);
+    text-decoration: none;
+    font-family: 'Staatliches', monospace;
+    font-size: 24px;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.61);
+}
+section {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+
+}
+.inner-link {
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 20px;
+    transition: 0.1s ease-in;
+    border: 2px solid rgba(255, 255, 255, 0.158);
+    box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.226);
+}
+.inner-link:hover {
+    background-color: transparent;
+    transform:scale(1.04);
+}
+.sub-head {
+    font-size: 13px;
+}
+.links-section {
+    margin-top: 30px;
+}
+.sub-sec {
+    margin: 15px 0px;
+    padding: 12px;
+}
+
+.picture-head{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+
+}
+.picture-head img{
+    width: 100%;
+    height: auto;
+
+}
+.badge {
+    display: block;
+    position: relative;
+    width: $base-size;
+    height: $base-size;
+    cursor: pointer;
+    
+    background-size: 120%;
+    border-radius: 50%;
+    transition: $easing;
+    box-shadow: 0px .5rem 1rem rgba(0,0,0,.75);
+}
+  
+.badge:hover {
+      box-shadow: 0px .5rem 2rem rgba(0,0,0,.75);
+      background-position: 0% 50%;
+}
+  
+
+  
+
+  
+
+@media screen and (max-width: 720px) {
+    section {
+        width: 100%;
+    }
+}
